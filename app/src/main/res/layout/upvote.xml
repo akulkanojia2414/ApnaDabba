@@ -1,0 +1,82 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wallpaper" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:textColor="#222"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toEndOf="@id/thumbnail"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:maxLines="3"
+            android:padding="8dp"
+            android:textColor="#666"
+            android:textSize="14dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/imageButton4"
+            android:layout_toStartOf="@+id/imageButton4"
+            android:adjustViewBounds="true"
+            android:background="#ffffff"
+            android:clickable="false"
+            android:src="@android:drawable/ic_delete" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff"
+            android:src="@android:drawable/ic_input_add" />
+
+        <TextView
+            android:id="@+id/Likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/imageButton3"
+            android:layout_marginRight="34dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
